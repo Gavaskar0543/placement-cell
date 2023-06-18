@@ -1,3 +1,41 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.jobs {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.jobs:hover {
+  cursor: pointer;
+  color: yellow;
+  border-bottom: 4px solid orange;
+}
+
+#mern-poster {
+  background-image: url("https://miro.medium.com/v2/resize:fit:750/format:webp/1*l2tlJsFNg2tH6QizegKkqA.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.company-logo {
+  display: inline-block;
+  padding: 0 15px;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
